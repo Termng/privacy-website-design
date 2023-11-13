@@ -1,0 +1,209 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+   
+    --ff-primary: "Barlow Semi Condensed", sans-serif;
+  
+  
+  
+  
+  }
+  
+  /* Box sizing rules */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /* Remove default margin */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+  
+  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+  ul[role="list"],
+  ol[role="list"] {
+    list-style: none;
+  }
+  
+  /* Set core root defaults */
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+  
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+  
+  /* Make images easier to work with */
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Inherit fonts for inputs and buttons */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+  
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+
+.logo  {
+  background-color: rgb(29, 29, 29);
+  color: white;
+  border: none;
+  padding: 1px 15px;
+  font-weight: 500;
+}
+.logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.link-group{
+  display: flex;
+  gap: 1.4rem;
+  list-style: none;
+
+}
+.link-group li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.btn-group{
+  border-left: 1px solid black;
+  display: flex;
+  /* gap: 1rem; */
+}
+
+.neutral-btn{
+  color: black;
+  border: none;
+  padding-inline: 2rem;
+  background-color: white;
+}
+
+.neutral-btn:hover{
+  background-color: white;
+}
+
+.primary-btn{
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 1rem 2rem;
+  background-color: blue;
+}
+
+.navi{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 7rem;
+  border-bottom: 1px solid black;
+}
+
+
+
+
+/* THIS IS THE FOOTER SECTION OF THE PAGE. DO NOT TOUCH */
+
+footer{
+  background-color: black;
+
+
+}
+
+.footer{
+  display: flex;
+  align-items: first baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 7.5rem;
+}
+
+.foot-item{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.foot-head{
+  text-decoration: none;
+  color: white;
+}
+
+.foot-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.foot-links li {
+  margin: 0;
+}
+
+
+.foot-links a{
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: rgb(135, 135, 135);
+}
+
+.trademark{
+  max-width: 80%;
+  /* width: 800px;   */
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: rgb(135, 135, 135);
+
+}
+
+.trademark-group{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
