@@ -168,6 +168,7 @@
 footer{
   background-color: black;
   padding-block: 4rem;
+  margin-top: 2rem;
 
 
 }
@@ -242,6 +243,6 @@ footer{
   margin-block: 2rem;
   display: flex;
   justify-content: space-around;
-  gap: 4rem;
+  gap: 49rem;
   flex-wrap: wrap;
 }
