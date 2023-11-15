@@ -198,3 +198,76 @@
     text-decoration: none;
     color: white;
 }
+
+.overlap{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+.modal-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 380px;
+  width: 100%;
+  border-radius: 10px;
+  background-color:var(--color-purple);
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-box h2{
+  margin-block: 1rem;
+  text-align: center;
+  font-weight: 400;
+  font-size:1rem ;
+}
+
+.modal-box h3{
+  font-size: .8rem;
+  font-weight: 300;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  text-align: center;
+  
+}
+
+.pop-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-block: 1rem;
+}
+
+.pb-2{
+  padding-block: 1rem;
+}
+
+body.active{
+  filter: blur(20px);
+}
+
+.active.modal-box{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.active.overlap{
+  opacity: 1;
+  pointer-events: auto;
+}
