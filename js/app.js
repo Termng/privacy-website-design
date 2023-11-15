@@ -9,3 +9,13 @@ showModal.addEventListener('click', () => overlay.classList.toggle('active'))
 
 close.addEventListener('click', () => popUp.classList.remove('active'))
 close.addEventListener('click', () => overlay.classList.remove('active'))
+
+
+
+// THIS IS FOR THE NAVIGATION TOGGLE
+
+
+
+
+
+

@@ -11,11 +11,23 @@ class SpecialHeader extends HTMLElement {
                     <li><a href="/pages/aboutUs.html">About Us</a></li>
                     <li><a href="/pages/blog.html">Blog</a></li>
                 </ul>
+
+               
      
                 <div class = "btn-group">
                     <button class="neutral-btn">Log in</button>
                     <button class="primary-btn">Sign Up &rarr; </button>
                 </div>
+
+                <div>
+                    <img class = "hamburger" src="/assets/images/hamburger.svg" alt=""> 
+
+                </div>
+
+
+               
+              
+                
             </nav>
         `;
     }
@@ -117,3 +129,15 @@ class SpecialFooter extends HTMLElement {
 
 customElements.define('special-header', SpecialHeader)
 customElements.define('special-footer', SpecialFooter)
+
+
+
+    const buotn = document.querySelector('.hamburger');
+    const newNav = document.querySelector('.link-group');
+
+    buotn.addEventListener('click', () => {
+        newNav.classList.toggle('show');
+        console.log('Button clicked! NewNav class toggled.');
+    });
+
+
