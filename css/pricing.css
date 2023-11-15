@@ -1,0 +1,32 @@
+:root {
+   
+    --ff-primary: "Barlow Semi Condensed", sans-serif;
+    --color-text: #333333;
+    --color-lime: #d4f5c4;
+    --color-purple: #4949F2;
+    --color-cream: #fcf6f0;
+    --color-purple-faint: #E4E4FD;
+    --color-red: #F24949;
+    
+
+
+    --box-shadow-default: 0 4px 8px 0 rgba(0,0,0,0.05);
+    --box-shadow-small: 0 2px 4px 0 rgba(0,0,0,0.05);
+    --box-shadow-large: 0 8px 16px 0 rgba(0,0,0,0.05);
+    --box-shadow-hairline: 0 0 0 1px rgba(0,0,0,0.10);
+}
+  
+
+  
+/* THIS IS THE BEGINNING OF THE CSS FOR PRICING PAGE  */
+
+
+
+
+
+
+
+
+/* WRITE MEDIA QUERIES BELOW  */
+
+

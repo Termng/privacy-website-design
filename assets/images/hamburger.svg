@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M24 0L24 0L24 24L0 24L0 0L24 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="hamburger" clip-path="url(#clip_1)">
+    <path d="M24 0L24 0L24 24L0 24L0 0L24 0Z" id="hamburger" fill="#FFFFFF" fill-opacity="0" stroke="none" />
+    <path d="M22 -1.90735e-06C23.1047 -1.90735e-06 24 0.895278 24 2L24 21C24 22.1047 23.1047 23 22 23L2 23C0.895284 23 3.8147e-06 22.1047 3.8147e-06 21L3.8147e-06 2C3.8147e-06 0.895278 0.895284 -1.90735e-06 2 -1.90735e-06L22 -1.90735e-06Z" id="Rectangle-3" fill="#323232" stroke="none" />
+    <path d="M18.5 4C19.3285 4 20 4.67146 20 5.5L20 5.5C20 6.32854 19.3285 7 18.5 7L5.5 7C4.67146 7 4 6.32854 4 5.5L4 5.5C4 4.67146 4.67146 4 5.5 4L18.5 4Z" id="Rectangle" fill="#FFFFFF" stroke="none" />
+    <path d="M18.5 10C19.3285 10 20 10.6715 20 11.5L20 11.5C20 12.3285 19.3285 13 18.5 13L5.5 13C4.67146 13 4 12.3285 4 11.5L4 11.5C4 10.6715 4.67146 10 5.5 10L18.5 10Z" id="Rectangle-Copy" fill="#FFFFFF" stroke="none" />
+    <path d="M18.5 16C19.3285 16 20 16.6715 20 17.5L20 17.5C20 18.3285 19.3285 19 18.5 19L5.5 19C4.67146 19 4 18.3285 4 17.5L4 17.5C4 16.6715 4.67146 16 5.5 16L18.5 16Z" id="Rectangle-Copy-2" fill="#FFFFFF" stroke="none" />
+  </g>
+</svg>
