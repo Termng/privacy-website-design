@@ -15,17 +15,45 @@
   </head>
   <body>
 
-      <span class="overlap"></span>
       
-      <section class="modal-box">
-        <i class="fas fa-user-lock fa-2x pb-2"></i>
-        <h2>Security where it matters</h2>
-        <h3>Get enterprise grade security on all card transactions. Its absolutely easy to have this set up </h3>
-        <div class="pop-buttons">
-            <button class="pop-btn">Get a demo</button>
-            <button class="pop-btn"> Open</button>
+      <dialog data-modal class="modal-box">
+        <div class="modal-flex">
+            <div class="cancel-flex">
+                <i class="fas fa-xmark fa4 cancel"></i>
+            </div>
+
+
+                <h2>Try Privacy for Free</h2>
+   
+         
+            <div class="mod-side">
+                <div class="modal-left">
+                    <h3>See how <span>2 Million+ Companies and Devs</span>
+                        accelerate their payments with
+                        Privacy. </h3>
+                        <div class="modal-btns">
+                            <a class="goto" href="#">
+                                <i class = "fab fa-google-play"></i>
+                                <p>Download on Store</p>
+                            </a>
+                            <a class="goto" href="#">
+                                <i class="fas fa-envelope"></i>
+                                <p>Sign Up with Email</p>
+                            </a>
+                            <a class="goto" href="#">
+                                <i class="fab fa-apple-pay"></i>
+                                <p>Integrate with Pay</p>
+                            </a>
+                        </div>
+
+                        <p class="integrates">Privacy integrates with your favourite payment and processing terminals</p>
+                </div>
+                <div class="modal-right">
+                    <img class="modImage" src="/assets/images/modImage.png" alt="">
+                </div>
+            </div>
         </div>
-    </section>
+    </dialog>
 
 
     <special-header></special-header>
@@ -55,7 +83,7 @@
                     </div>
                 </div>
                 <div class="btn-hero">
-                    <button class="primary-btn rounded-btn">
+                    <button data-open-modal class="primary-btn rounded-btn">
                         <a href="#"> Get Privacy now</a>
                     </button>
 
