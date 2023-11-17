@@ -6,7 +6,7 @@
   background-color: white;
   width: 800px;
   height: 2370px;
-  border: 15px solid green;
+  border: none;
   margin: auto;
   padding: 20px;
   padding-top: 90px;
@@ -73,23 +73,45 @@ h4{
 }
 
 .second-sectionP2{
-    padding-bottom: 10px;
-    font-size: 18px;
-    line-height: 2.3rem;
+    padding-bottom: none;
+    font-size: 20px;
+    line-height: 2.7rem;
     padding-top: none;
 }
 
 .third-section{
     background-color: lightgreen;
-    height: 100%;
 }
 
 h6{
     font-size: 40px;
     text-align: center;
+    padding-bottom: none;
+    height: 0.2rem;
 }
 
 .third-sectionP1{
     text-align: center;
-    font-size: ;
+    font-size: 18px;
+    padding-bottom: 35px;
+}
+
+.button-section{
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 20px;
+}
+
+
+.button{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-purple);
+    color: rgb(255, 255, 255);
+    background-color: var(--color-purple);
+  }
 }
