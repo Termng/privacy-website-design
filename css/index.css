@@ -119,6 +119,9 @@
     color: white;
 }
 
+dialog::backdrop{
+  background-color: rgba(0, 0, 0, 0.7);
+}
 
 
 .modal-flex{
