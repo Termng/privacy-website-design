@@ -1,6 +1,7 @@
 :root {
    
     --ff-primary: "Barlow Semi Condensed", sans-serif;
+    --color-dark-green:#14664b;
     --color-text: #333333;
     --color-lime: #d4f5c4;
     --color-purple: #4949F2;
@@ -13,11 +14,147 @@
 
   /* THIS IS THE INDEX PAGE CSS FILE */
 
+  .modal-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .mod-side{
+    display: flex;
+    align-items: flex-start;
+    padding-inline: 2rem;
+  }
+  
+  .modal-left{
+    width: 50%;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  .modal-right{
+   
+    width: 50%;
+  }
+  .modal-right img{
+    transform: scale(1);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .modal-box{
+    z-index: 10;
+    max-width: 880px;
+    height: 550px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    border: none;
+  }
+  
+  
+  
+  .modal-box h2{
+    /* margin:0; */
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.4rem ;
+    color: #333333;
+  }
+  .cancel-flex{
+    display: flex;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+  
+  .cancel{
+    color: var(--color-text);
+    background-color: white;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 5px;
+    transition: all 0.1s ease-in-out;
+   
+  }
+  
+  .cancel:hover{
+    color: white;
+    background-color: var(--color-purple);
+  }
+  
+  .modal-box h3{
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding-block: 1rem;
+    text-align: left;
+    color: #333333;
+  }
+  
+  .modal-left h3 span{
+    font-weight: 700;
+  }
+  
+  .modal-btns{
+    display: flex;
+    gap: .9rem;
+    flex-direction: column;
+  }
+
+  .goto{
+    width: fit-content;
+    display: flex;
+    border-radius: 5px;
+    padding-block: .6rem;
+    padding-inline: 1rem;
+    gap: 1rem;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: #333333;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .goto:hover{
+    background-color: var(--color-purple);
+  }
+  
+  .integrates{
+    color: var(--color-text);
+    font-weight: 300;
+  }
+  
+  .pop-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-block: 1rem;
+  }
+
+
+
+
+
+
+
+
+
+
+/* THIS IS THE HERO PAGE SECTION */
+
 .hero{
     display: flex;
     align-items: last baseline;
     justify-content: space-around;
-    padding-inline: 4rem;
+    padding-inline: 2rem;
     gap: 1rem;
     border-bottom: solid 1px black;
     /* flex-wrap: wrap; */
@@ -99,6 +236,16 @@
     gap: 2rem;
 }
 
+.rounded-btn{
+    border-radius: 8px;
+}
+
+.rounded-btn a{
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
 .hero-link{
     display: flex;
     gap: 1rem;
@@ -112,146 +259,95 @@
     font-weight: 600;
 }
 
-.rounded-btn{
-    border-radius: 5px;
-    font-size: .9rem;
+/* THIS IS THE BANNER SECTION */
+.green-banner{
+  text-align: center;
+  font-size: clamp(0.7rem, 2vw, 1rem);
+  font-weight: 500;
+  color: var(--color-dark-green);
+  background-color: var(--color-lime);
+  padding-block: 2rem;
+  border-bottom: 1px solid black;
 }
 
-.rounded-btn a{
-    text-decoration: none;
-    color: white;
-}
-
-
-
-.modal-flex{
+.green-banner-flex{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-
-}
-
-.mod-side{
-  display: flex;
-  align-items: flex-start;
+  align-items: center;
+  gap: 1rem;
   padding-inline: 2rem;
 }
 
-.modal-left{
-  width: 50%;
+
+/* THIS IS THE TESTIMONIAL SECTION */
+
+.testimonial{
   display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-  flex-direction: column;
+  align-items: first baseline;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-block: 3rem;
+  padding-inline: 2rem;
 }
 
-.modal-right{
- 
-  width: 50%;
+.testimonial-flex{
+  display: flex;
+  align-items: first baseline;
+  flex-direction: column;
+  gap: 2rem;
+  width: 350px;
 }
-.modal-right img{
-  transform: scale(1);
+
+.testimonial-flex h3{
+  font-size: 1rem;
+}
+
+.testimonial-flex>img{
+  width: clamp(150px, 2.5vw, 100px);
+  filter: grayscale();
+}
+
+.av-image-name{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+
+.av-image{
+  display: block;
+  max-width: 70px;
+  height: 70px;
+}
+
+.av-image img{
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: grayscale();
 }
 
-.modal-box{
-  z-index: 10;
-  max-width: 880px;
-  height: 550px;
-  width: 100%;
-  border-radius: 10px;
-  background-color: white;
-  color: white;
-  transition: all 0.3s ease-in-out;
-  border: none;
-}
-
-
-
-.modal-box h2{
-  /* margin:0; */
-  margin-bottom: 1rem;
-  text-align: center;
-  font-weight: 600;
-  font-size: 2.4rem ;
-  color: #333333;
-}
-.cancel-flex{
+.name-position{
   display: flex;
-  align-self: flex-end;
-  cursor: pointer;
-}
-
-.cancel{
-  color: var(--color-text);
-  background-color: white;
-  padding: 5px;
-  font-size: 30px;
-  border-radius: 5px;
-  transition: all 0.1s ease-in-out;
- 
-}
-
-.cancel:hover{
-  color: white;
-  background-color: var(--color-purple);
-}
-
-.modal-box h3{
-  font-size: 1.4rem;
-  font-weight: 300;
-  padding-block: 1rem;
-  text-align: left;
-  color: #333333;
-}
-
-.modal-left h3 span{
-  font-weight: 700;
-}
-
-.modal-btns{
-  display: flex;
-  gap: .9rem;
   flex-direction: column;
+  gap: .2rem;
 }
 
-.goto{
-  width: fit-content;
-  display: flex;
-  border-radius: 5px;
-  padding-block: .6rem;
-  padding-inline: 1rem;
-  gap: 1rem;
-  align-items: center;
-  text-decoration: none;
-  color: white;
-  background-color: #333333;
-  transition: all 0.2s ease-in-out;
+.name-position p:nth-child(2){
+  font-weight: 200;
 }
 
-.goto:hover{
-  background-color: var(--color-purple);
-}
-
-.integrates{
-  color: var(--color-text);
-  font-weight: 300;
-}
-
-.pop-buttons{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  padding-block: 1rem;
-}
 
 .pb-2{
   padding-block: 1rem;
 }
+
+/* THIS IS THE RATING SECTION */
+
+
+
 
 .rating{
   display: flex;
@@ -259,12 +355,15 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  padding-block: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
   border-bottom: solid 1px black;
 }
 
 .rating h2{
-  font-size: 2.2rem;
+  font-size: 2.3rem;
+  line-height: 2.4rem;
+  margin-inline: 3rem;
 }
 
 
@@ -301,8 +400,12 @@
   font-weight: 300;
 }
 
+
+/* THIS IS THE MORE DETAILS SECTION */
+
 .more-details{
   padding-block: 4rem;
+  padding-inline: 2rem;
   border-bottom: solid 1px black;
 }
 
@@ -322,7 +425,7 @@
   align-items: first baseline;
   justify-content: center;
   flex-direction: column;
-  max-width: 420px;
+  max-width: 350px; 
   width: 100%;
 }
 
@@ -334,8 +437,9 @@
 
 
 .purp-cont{
-  width: 386px;
+  width: 100%;
   height: 257px;
+  padding: 1rem;
   border-radius: 15px;
   background-color: var(--color-purple);
 }
@@ -346,6 +450,161 @@
   object-fit: contain;
   transform: scale(0.88);
 }
+
+
+
+/* THIS IS THE MAIN USE CASES SECTION */
+
+
+
+.main-use-cases{
+  margin-inline: 4rem;
+}
+
+.grid-use-cases{
+  
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+  
+
+}
+
+
+
+@media (max-width: 968px) {
+    .grid-use-cases {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+}
+  
+
+
+.use-cases{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.use-case-image{
+  grid-area: 1/3/3/4;
+  justify-self: center;
+  
+}
+.use-case-image img{
+ 
+  object-fit: contain;
+ 
+  
+}
+
+.main-use-cases-header{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-block: 2rem;
+}
+
+.main-use-cases h2{
+  font-size: 3.2rem;
+  line-height: 3.5rem;
+}
+
+.main-use-cases-header >p{
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  width: 60%;
+}
+
+.main-use-cases-header >p span{
+  font-weight: 700;
+}
+
+.use-cases p{
+  font-size: .9rem;
+  font-weight: 300;
+}
+
+
+/* THIS IS THE SAFETY SECTION */
+
+.safety{
+  display: flex;
+  flex-direction: column;
+  padding-block: 5rem;
+
+}
+
+
+.safety-header{
+  display: flex;
+  flex-direction: column;
+  margin-inline: 2rem;
+  text-align: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.safety-header h2{
+  font-size: 2.3rem;
+  line-height: 2.4rem;
+}
+
+.safety-flex{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.safety-card{
+  display: flex;
+  width: 600px;
+  padding: 2rem;
+  flex-direction: column ;
+  border-radius: 10px;
+  gap: 2rem;
+  margin-inline: 2rem;
+}
+
+.safety h3{
+  font-size: 1.5rem;
+}
+
+.safety-card p{
+  color: var(--color-text);
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.green{
+  background-color: var(--color-lime);
+}
+
+
+.v-cards{
+  width: 100%;
+}
+
+.v-cards img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
+
+
 
 
 
@@ -395,6 +654,29 @@
 /* WRITE MEDIA QUERIES BELOW */
 
 
+@media (max-width: 1380px) {
+  .details-flex{
+    flex-wrap: wrap;
+  }
+  .more-details-flex{
+    flex-wrap: wrap;
+  }
+  .details{
+    text-align: left;
+  }
+
+  .main-use-cases-header >p{
+    text-align: left;
+    width: 100%;
+  }
+  .safety-card p{
+    font-size: .9rem;
+  }
+  
+}
+
+
+
 @media (max-width: 1502px) {
   .hero{
     flex-wrap: wrap;
@@ -407,7 +689,7 @@
     width: 100%;
   }
   .hero{
-    margin-inline: 2rem;
+    margin-inline: 0.2rem;
   }
 
   .hero-right img{
@@ -416,13 +698,32 @@
   
 }
 
+@media (min-width: 1210px) {
+  .hero{
+    padding-inline: 5rem;
+  }
+
+
+  
+}
 
 
 @media (max-width: 430px) {
   .hero-text h1{
     font-size: 2.3rem;
     line-height: 2.4rem;
-  }  
+  }
+  .purp-cont{
+    height: 150px;
+  }
+  .more-details-card{
+    width: 200px;
+  }
+  .main-use-cases h2{
+    font-size: 2.3rem;
+    line-height: 2.4rem;
+
+  }
 }
 
 
@@ -458,3 +759,6 @@
 
   
 }
+
+
+
