@@ -605,10 +605,160 @@ dialog::backdrop{
 }
 
 
+.customers{
+  background-color: var(--color-lime);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-block: 5rem;
+}
+
+.customers a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  background-color: none;
+  border: none;
+  text-decoration: none;
+}
+
+
+.customers-section-flex{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.customers h2{
+  font-size: 3.2rem;
+  line-height: 2.4rem;
+  text-align: center;
+
+}
+
+
+
+.customer-card-flex{
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding-inline: 2rem;
+}
+
+
+.customer-card{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1rem;
+  width: 90%;
+  min-width: 260px;
+  max-width: 350px;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.customers-stars{
+  width: 130px;
+}
+
+.customer-card p:nth-child(2){
+  font-weight: 300;
+}
+
+.customer-card p:nth-child(3){
+  color: rgb(138, 137, 137);
+  font-weight: 500;
+}
+
+.customer-card p span{
+  font-weight: 600;
+}
+
+
+
+/* THIS IS THE ACCORDION SECTION */
+
+.accordion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion h2{
+  font-size: 3.2rem;
+  padding-block: 1rem;
+}
+
+sl-details{
+  width: 800px;
+  color: rgb(0, 0, 0);
+  border-bottom: 0.6px solid rgb(128, 125, 125);
+  font-size: 1rem;
+  font-weight: 300;
+  padding-block: 0.5rem;
+}
+
+sl-details::part(summary){
+  color: var(--color-text);
+  font-size: 1.2rem;
+  padding-block: 1rem ;
+  font-weight: 400;
+
+}
+
+sl-details .accordion-span{
+  display: block;
+  padding-block: 1rem;
+}
+
+/* THIS IS THE SIGNUP COMPONENT. MOVE THIS TO THE RESET.CSS PAGE */
+
+.sign-up{
+  background-color: var(--color-lime);
+  padding-block: 3rem;
+  margin-top: 4rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.sign-up div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.sign-up h2{
+  font-size: 3.2rem;
+  text-align: center;
+}
+.sign-up p{
+  font-size: 1.1rem;
+  font-weight: 300;
+  max-width: 700px;
+  width: 80%;
+}
 
 
 
 
+.sign-up-component{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  background-color: none;
+  border: none;
+  text-decoration: none;
+}
 
 
 
@@ -705,8 +855,6 @@ dialog::backdrop{
   .hero{
     padding-inline: 5rem;
   }
-
-
   
 }
 
@@ -726,6 +874,15 @@ dialog::backdrop{
     font-size: 2.3rem;
     line-height: 2.4rem;
 
+  }
+  .sign-up h2{
+    font-size: 2.3rem;
+  }
+  .customers h2{
+    font-size: 2.3rem;
+    line-height: 2.4rem;
+    text-align: center;
+  
   }
 }
 
@@ -760,6 +917,24 @@ dialog::backdrop{
     font-size: 1.1rem;
   }
 
+  
+}
+
+@media (max-width: 890px) {
+  sl-details{
+    width: 80%;
+    max-width: 400px;
+    color: rgb(0, 0, 0);
+    border-bottom: 0.6px solid rgb(128, 125, 125);
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+  
+  sl-details::part(summary){
+    color: var(--color-text);
+    font-size: 1.2rem;
+    padding-block: 1rem ;
+  }
   
 }
 
