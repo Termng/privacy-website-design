@@ -19,7 +19,122 @@
 
   
 /* THIS IS THE BEGINNING OF THE CSS FOR PRICING PAGE  */
+.container {
+    height: 100vh;
+    
+}
 
+.header {
+    text-align: center;
+    padding-top: 60px;
+    font-size: 24px;
+}
+
+.plans {
+    padding-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    height: 84vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+
+.plansheadone {
+    font-size: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #4949f2;
+    color: #fcf6f0;
+    border-radius: 4px;
+    width: 150px;
+    text-align: center;
+    margin-top: -45px;
+    margin-left: 83px;
+    margin-right: 83px;
+    align-items: center;
+
+}
+
+
+.plansheadtwo {
+    font-size: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: #4949f2;
+    color: #fcf6f0;
+    border-radius: 4px;
+    width: 187px;
+    text-align: center;
+    margin-top: -45px;
+    margin-left: 69px;
+    margin-right: 69px;
+}
+
+.plansheadthree {
+    font-size: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: #4949f2;
+    color: #fcf6f0;
+    border-radius: 4px;
+    width: 210px;
+    text-align: center;
+    margin-top: -45px;
+    margin-left: 58px;
+    margin-right: 58px;
+}
+
+.pricingplans {
+    border: 1px solid black;
+    width: 30%;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.personal {
+    margin-top: 32px;
+}
+
+.money {
+    display: flex;
+    gap: 5px;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+.bottom {
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #333333;
+    color: #fcf6f0;
+    font-size: 12px;
+}
 
 
 
