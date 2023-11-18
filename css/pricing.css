@@ -28,15 +28,18 @@
 
 .header {
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 1.7rem;
+    margin-top: 3rem;
 }
 
 /* THIS IS THE FLEBOX FOR THE THREE CARDS */
 .card-flex{
     display: flex;
     gap: 3rem;
-    align-items: first baseline;
+    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    padding-inline: 2rem;
     /* background-color: green; */
 }
 
@@ -57,11 +60,20 @@
     border-radius: 4px;
     position: absolute;
     text-align: center;
-    transform: translateX(-15px);
-    transform: translateY(-10px);
-    margin-left: -80PX;
     padding-inline:1rem ;
-    padding-block: .2rem;
+    padding-block: .4rem;
+    transform: translateX(-15px);
+    transform: translateY(-15px);
+}
+
+.first{
+    margin-left: -80px;
+}
+.second{
+    margin-left: -100px;
+}
+.third{
+    margin-left: -110px;
 }
 
 
@@ -80,7 +92,7 @@
     display: flex;
     max-width: 400px;
     flex-direction: column;
-    gap: 8rem;
+    /* gap: 8rem; */
     padding-inline: 2.3rem;
     padding-block: 2rem;
     border: 1px solid black;
@@ -117,19 +129,43 @@
     font-weight: 400;
 }
 
+.list-header h2{
+    font-size: .9rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+
+.highlight h2{
+    color: var(--color-purple);
+}
+
+
+
+.list-header h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.list-header h3 span{
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
 /* THIS IS THE BUTTON COMPONENT */
 .cta-btn{
     display: inline-block;
     text-align: center;
     width: 100%;
-    /* max-width: 300px; */
+    margin-top: 5rem;
     background-color: var(--color-text) ;
     color: white;
     text-decoration: none;
-    /* padding-inline:7rem ; */
     padding-block: 1rem;
     border-radius: 5px;
-    /* margin: 0 auto; */
+   
+}
+.highlight-btn{
+    background-color: var(--color-purple);
 }
 
 
@@ -138,9 +174,37 @@
     font-weight: 300;
 }
 
+.mt-6{
+    margin-top: 9rem;
+}
 
 
 
+
+ul p{
+color: grey;
+font-weight: 300;
+font-size: .75rem;
+}
+
+.white{
+    border: 1px solid black;
+}
+
+.green{
+    background-color: var(--color-lime);
+    min-height: 800px;
+    border: 1px solid black
+}
+
+
+
+@media (max-width: 300px) {
+    .move h2{
+        font-size: 12px;
+    }
+    
+}
 
 
 
