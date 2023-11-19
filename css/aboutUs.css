@@ -7,6 +7,12 @@
     --color-cream: #fcf6f0;
     --color-purple-faint: #E4E4FD;
     --color-red: #F24949;
+  
+  
+    --box-shadow-default: 0 4px 8px 0 rgba(0,0,0,0.05);
+    --box-shadow-small: 0 2px 4px 0 rgba(0,0,0,0.05);
+    --box-shadow-large: 0 8px 16px 0 rgba(0,0,0,0.05);
+    --box-shadow-hairline: 0 0 0 1px rgba(0,0,0,0.10);
 }
 
 
@@ -39,3 +45,8 @@
 
 
 /* WRITE MEDIA QUERIES BELOW  */
+=======
+    
+
+
+
