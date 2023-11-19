@@ -253,6 +253,54 @@ footer{
   flex-wrap: wrap;
 }
 
+/* THIS IS THE SIGNUP COMPONENT */
+
+.sign-up{
+  background-color: var(--color-lime);
+  padding-block: 3rem;
+  margin-top: 4rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.sign-up div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.sign-up h2{
+  font-size: 3.2rem;
+  text-align: center;
+}
+.sign-up p{
+  font-size: 1.1rem;
+  font-weight: 300;
+  max-width: 700px;
+  width: 80%;
+}
+
+
+
+
+.sign-up-component{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  background-color: none;
+  border: none;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
 
 @media (max-width: 1280px) {
 
