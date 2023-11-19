@@ -119,6 +119,30 @@ class SpecialFooter extends HTMLElement {
 }
 
 
+    class SignupComponent extends HTMLElement {
+        connectedCallback() {
+            this.innerHTML = `
+            <section class="sign-up">
+                <div >
+                    <h2>Sign up in Under Three Minutes</h2>
+                    <p>
+                        Our basic plan is free to use* on domestic transactions because, like other card companies, we collect transaction fees from merchants.
+                    </p>
+                    
+                    <a class="rounded-btn primary-btn sign-up-component" href="#">
+                        <p>Sign Up</p>
+                        <i class="fas fa-arrow-rightfas fa-arrow-right"></i>
+                        </a>
+                </div>
+            </section>
+            
+            
+            `
+        }
+    }
+
+
+
 
 
 
@@ -129,6 +153,12 @@ class SpecialFooter extends HTMLElement {
 
 customElements.define('special-header', SpecialHeader)
 customElements.define('special-footer', SpecialFooter)
+<<<<<<< Updated upstream
+=======
+customElements.define('special-accordion', SpecialAccordion)
+customElements.define('signup-component', SignupComponent)
+
+>>>>>>> Stashed changes
 
 
 
