@@ -160,8 +160,10 @@
 .hamburger{
   display: none;
   width: 30px;
+
   cursor: pointer;
 }
+
 
 
 
@@ -174,7 +176,7 @@
 footer{
   background-color: black;
   padding-block: 4rem;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 
 
 }
@@ -308,6 +310,7 @@ footer{
     display: none;
   }
   .hamburger{
+    width: 30px;
     display: block;
   }
   .link-group{

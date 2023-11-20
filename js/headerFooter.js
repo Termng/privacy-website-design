@@ -13,7 +13,7 @@ class SpecialHeader extends HTMLElement {
                 </ul>
 
                
-     
+                <div>
                 <div class = "btn-group">
                     <button class="neutral-btn">Log in</button>
                     <button class="primary-btn">Sign Up &rarr; </button>
@@ -23,7 +23,7 @@ class SpecialHeader extends HTMLElement {
                     <img class = "hamburger" src="/assets/images/hamburger.svg" alt=""> 
 
                 </div>
-
+                </div>
 
                
               

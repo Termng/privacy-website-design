@@ -12,6 +12,25 @@
 }
 
 
+
+@keyframes slideAndFade {
+  0% {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+
+.modal-box{
+  z-index: 9999;
+  animation: slideAndFade 0.5s ease-in-out forwards;
+}
+
   /* THIS IS THE INDEX PAGE CSS FILE */
 
   .modal-flex{
@@ -281,6 +300,8 @@
 dialog::backdrop{
   background-color: rgba(0, 0, 0, 0.7);
 }
+
+
 
 /* THIS IS THE TESTIMONIAL SECTION */
 
