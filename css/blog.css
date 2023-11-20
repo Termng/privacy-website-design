@@ -20,8 +20,139 @@
   
 /* THIS IS THE BEGINNING OF THE CSS FOR  BLOG PAGE  */
 
+.sub{
+    display: flex;
+    align-items: center;
+    gap: 38rem;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+    margin-block: 1rem;
+}
+
+.sub-header{
+    display: flex;
+    gap: 2rem;
+}
+
+.sub-header li{
+    list-style: none;
+}
+.sub-header li a {
+    text-decoration: none;
+    color: black;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 2rem;
+}
 
 
+.stack{
+    display: flex;
+    flex-direction: column;
+    gap: 3.8rem;
+    align-items: first baseline;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+
+
+.blog-card{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 2rem;
+}
+
+.blog-image{
+    min-width: 200px;
+}
+
+
+.text-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+
+.blog-image{
+    width: 200px;
+    height: 128px;
+
+}
+
+.blog-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+
+
+.title{
+    display: flex;
+    align-items: last baseline;
+    gap: 1rem;
+}
+
+
+.title p{
+    background-color: var(--color-lime);
+    padding: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.details{
+    font-size: .9rem;
+    font-weight: 300;
+    padding-top: 1rem;
+    
+}
+
+.image-name{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.avatar{
+    max-width: 40px ;
+    height: 40px ;
+    border-radius: 50%;
+}
+
+.avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.name{
+    font-size: .9rem;
+    font-weight: 400;
+
+}
+
+.written{
+    font-size: .8rem;
+    font-weight: 400;
+    color: grey;
+
+}
 
 
 
@@ -30,3 +161,36 @@
 /* WRITE MEDIA QUERIES BELOW  */
 
 
+@media (max-width: 840px) {
+    .blog-card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-image{
+        max-width: 850px;
+        width: 100%;
+        height: 100%;
+    }
+    .title{
+        flex-wrap: wrap;
+        gap: .1rem;
+    }
+
+    .title h2{
+        font-size: 1.3rem;
+    }
+
+    .details{
+        font-size: .8rem;
+    }
+    .name{
+        font-size: .8rem;
+
+    }
+    .written{
+        font-size: .7rem;
+    }
+
+    
+}
