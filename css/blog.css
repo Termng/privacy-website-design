@@ -23,6 +23,7 @@
 
 
 .sub{
+    overflow: hidden;
     display: flex;
     align-items: center;
     gap: 38rem;
@@ -49,6 +50,7 @@
     justify-content: center;
     align-items: center;
     margin-block: 2rem;
+    overflow: hidden;
 }
 
 
