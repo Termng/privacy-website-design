@@ -20,6 +20,8 @@
   
 /* THIS IS THE BEGINNING OF THE CSS FOR VIRTUAL CARDS PAGE  */
 
+  
+
 .top{
     display: flex;
     align-items: flex-start;
@@ -182,3 +184,13 @@ h1{
 
 /* WRITE MEDIA QUERIES BELOW  */
 
+
+@media (max-width: 700px) {
+    .left h1{
+        line-height: 3rem;
+    }
+    .left p{
+        font-size: 1.3rem;
+    }
+    
+}

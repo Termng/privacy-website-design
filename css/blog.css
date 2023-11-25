@@ -20,6 +20,8 @@
   
 /* THIS IS THE BEGINNING OF THE CSS FOR  BLOG PAGE  */
 
+
+
 .sub{
     display: flex;
     align-items: center;
@@ -192,5 +194,12 @@
         font-size: .7rem;
     }
 
+    
+}
+
+@media (max-width: 1266px) {
+    .sub{
+        display: none;
+    }
     
 }
