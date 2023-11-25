@@ -17,6 +17,8 @@
     <title>Privacy: Card Transactions that are secure</title>
   </head>
   <body>
+
+    <div id="preloader"></div>
     
         <dialog data-modal class="modal-box">
             <div class="modal-flex">
@@ -369,7 +371,12 @@
 
        
 
-
+        <script>
+            let loader = document.getElementById("preloader");
+            window.addEventListener("load", function(){
+                loader.style.display = "none";
+            })
+        </script>
      
  
     <script src="/js/app.js"></script>

@@ -15,7 +15,7 @@
     <title>Privacy Pricings</title>
   </head>
   <body>
-
+    <div id="preloader"></div>
 
     <special-header></special-header>
 
@@ -222,6 +222,17 @@
     
 
     <special-footer></special-footer>
+    <script>
+      let loader = document.getElementById("preloader");
+      window.addEventListener("load", function(){
+          loader.style.display = "none";
+      })
+    </script>
+
+
+
+
+
     <script src="/js/app.js"></script>
     <script src="/js/headerFooter.js"></script>
 

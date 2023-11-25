@@ -18,7 +18,14 @@
 
 /* THIS IS THE BEGINNING OF THE CSS FOR ABOUT US PAGE  */
 
-
+#preloader{
+  background: white url(/assets/images/Pulse-1s-277px.gif) no-repeat center;
+  background-size: 5%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
 
 
 .main-box{

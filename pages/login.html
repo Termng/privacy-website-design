@@ -20,6 +20,7 @@
     <title>Login to Privacy</title>
 </head>
 <body>
+    <div id="preloader"></div>
     
     <main>
         <button class="center-me"> <a href="/index.html">PRIVACY</a></button>
@@ -63,7 +64,13 @@
         </div>
     </main>
     
-    
+    <script>
+        let loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+    </script>
+ 
 
     <script src="/js/app.js"></script>
     <script src="/js/headerFooter.js"></script>
