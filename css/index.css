@@ -11,6 +11,18 @@
     
 }
 
+.loader{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
 
 
 @keyframes slideAndFade {
@@ -175,7 +187,6 @@
     justify-content: space-around;
     padding-inline: 2rem;
     gap: 1rem;
-    border-bottom: solid 1px black;
     /* flex-wrap: wrap; */
 
 }
@@ -184,7 +195,6 @@
     width: 50%;
     padding-block: 2rem;
 }
-
 
 
 
@@ -287,14 +297,40 @@
   background-color: var(--color-lime);
   padding-block: 2rem;
   border-bottom: 1px solid black;
+  border-top: 1px solid black;
 }
 
 .green-banner-flex{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
   padding-inline: 2rem;
+}
+
+.key{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+@-webkit-keyframes rotating {
+  from{
+      -webkit-transform: rotate(0deg);
+  }
+  to{
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+
+.green-banner-flex img{
+  width: 60px;
+  color: #14664b;
+  -webkit-animation: rotating 8s linear infinite;
+  
+
+
 }
 
 dialog::backdrop{
@@ -453,6 +489,8 @@ dialog::backdrop{
   width: 100%;
 }
 
+
+
 .more-details-card p{
   max-width: 90%;
   font-size: .9rem;
@@ -466,6 +504,13 @@ dialog::backdrop{
   padding: 1rem;
   border-radius: 15px;
   background-color: var(--color-purple);
+  transition: all ease-in-out .2s;
+
+}
+
+.purp-cont:hover{
+  filter: grayscale();
+
 }
 
 .purp-cont img{
@@ -801,6 +846,9 @@ sl-details .accordion-span{
   }
   .safety-card p{
     font-size: .9rem;
+  }
+  .ror-badge{
+    display: none;
   }
   
 }

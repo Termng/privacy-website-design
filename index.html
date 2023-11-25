@@ -10,365 +10,533 @@
       src="https://kit.fontawesome.com/fc0bcf5886.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
     <title>Privacy: Card Transactions that are secure</title>
   </head>
   <body>
-
-      
-      <dialog data-modal class="modal-box">
-        <div class="modal-flex">
-            <div class="cancel-flex">
-                <i class="fas fa-xmark fa4 cancel"></i>
-            </div>
-
-
-                <h2>Try Privacy for Free</h2>
-   
-         
-            <div class="mod-side">
-                <div class="modal-left">
-                    <h3>See how <span>2 Million+ Companies and Devs</span>
-                        accelerate their payments with
-                        Privacy. </h3>
-                        <div class="modal-btns">
-                            <a class="goto" href="#">
-                                <i class = "fab fa-google-play"></i>
-                                <p>Download on Store</p>
-                            </a>
-                            <a class="goto" href="#">
-                                <i class="fas fa-envelope"></i>
-                                <p>Sign Up with Email</p>
-                            </a>
-                            <a class="goto" href="#">
-                                <i class="fab fa-apple-pay"></i>
-                                <p>Integrate with Pay</p>
-                            </a>
-                        </div>
-
-                        <p class="integrates">Privacy integrates with your favourite payment and processing terminals</p>
+    
+        <dialog data-modal class="modal-box">
+            <div class="modal-flex">
+                <div class="cancel-flex">
+                    <i class="fas fa-xmark fa4 cancel"></i>
                 </div>
-                <div class="modal-right">
-                    <img class="modImage" src="/assets/images/modImage.png" alt="">
-                </div>
-            </div>
-        </div>
-    </dialog>
 
 
-    <special-header></special-header>
-
-    <div class="hero">
-            <div class="hero-left">
-                <div class="hero-text">
-                    <h3>Trusted by 250k+ users</h3>
-                    <h1>Protect Your Payments and Keep Free Trials Free</h1>
-                    <h2>
-                        Shop privately and securely. Pay with virtual Privacy Cards that
-                        shield your card info.
-                    </h2>
-                </div>
-                <div class="hero-list">
-                    <div class="list">
-                        <i class="fas fa-arrow-right"></i>
-                        <p>Block overcharging and prevent fraud</p>
-                    </div>
-                    <div class="list">
-                        <i class="fas fa-arrow-right"></i>
-                        <p>Set limits to control your spending</p>
-                    </div>
-                    <div class="list">
-                        <i class="fas fa-arrow-right"></i>
-                        <p>Pause, unpause, and close cards any time</p>
-                    </div>
-                </div>
-                <div class="btn-hero">
-                    <button data-open-modal class="primary-btn rounded-btn">
-                        <a href="#"> Get Privacy now</a>
-                    </button>
-
-                    <a class="hero-link" href="#">
-                        <div class="img-flex">
-                            <img class="t-logo" src="/assets/images/tpilot-logo.svg" alt="" />
-                            <img class="stars" src="/assets/images/Trustpilot.svg" alt="" />
-                        </div>
-                        
-                        <div>
-                            <p>Trust Score 4.8</p>
-                            <p>2800+ reviews</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="hero-right">
-                <img src="/assets/images/bgImage.png" alt="">
-
-
-            </div>
-    </div>
-
-    <section class="green-banner">
-        <div class="green-banner-flex">
-            <i class="fas fa-lock"></i>
-            <p>Over $2 billion processed using best-in-class bank-level security & encryption</p>
-        </div>
-    </section>
-
-    <section class="testimonial">
-        <div class="testimonial-flex">
-            <img src="/assets/logo/techcrunch.svg" alt="">
-            <h3>“Privacy makes it harder for hackers to get your real credit card details.”</h3>
-            <div class="av-image-name">
-                <div class="av-image">
-                    <img src="/assets/avatars/avatar2.jpg" alt="">
-                </div>
-                <div class="name-position">
-                    <p>Zack Whittaker</p>
-                    <p>Security Editor at TechCrunch</p>
-                </div>
-            </div>
-        </div>
-        <div class="testimonial-flex">
-            <img src="/assets/logo/paystack-2.svg" alt="">
-            <h3>
-                “The Easy Way I Protect My Payments Online and Keep Free Trials Free.”
-            </h3>
-            <div class="av-image-name">
-                <div class="av-image">
-                    <img src="/assets/avatars/avatar1.jpg" alt="">
-                </div>
-                <div class="name-position">
-                    <p>Kimber Streams</p>
-                    <p>Senior staff writer at Paystack</p>
-                </div>
-            </div>
-        </div>
-        <div class="testimonial-flex">
-            <img src="/assets/logo/forbes-logo-svg-vector.svg" alt="">
-            <h3>
-                “Privacy.com gives customers peace of mind for online purchases.”
-            </h3>
-            <div class="av-image-name">
-                <div class="av-image">
-                    <img src="/assets/avatars/avatar3.jpg" alt="">
-                </div>
-                <div class="name-position">
-                    <p>Blake Morgan</p>
-                    <p>Security Contributor at Forbes</p>
-                </div>
-            </div>
-        </div>
-
-
-    </section>
-
-
-    <section class="rating">
-        <h2>“Top 100 Most Customer-Centric Companies”</h2>
-        <h3>Forbes</h3>
-
-        <div class="details-flex">
-            <div class="details">
-                <i class="fas fa-lock fa-2x"></i>
-                <p>Best in Class Encryption</p>
-                <p class="details-text">
-                    With miltary grade 256-bit encryption and rigorous PCI-DSS compliance, we protect your sensitive information like it’s our own.
-                </p>
-            </div>
-            <div class="details">
-                <i class="fas fa-award fa-2x"></i>
-                <p>Award Winning Protection</p>
-                <p class="details-text">
-                    We take consumer privacy seriously – Forbes recently named Privacy one of the world’s “Top 100 Most Customer-Centric Companies.”
-                </p>
-            </div>
-            <div class="details">
-                <i class="fas fa-heart fa-2x"></i>
-                <p>Top Rated Customer Service</p>
-                <p class="details-text">
-                    We’re highly responsive and care about your financial security. If you need any help or have questions about Privacy, get in touch.
-                </p>
-            </div>
-            <div class="details">
-                <i class="fas fa-user-check fa-2x"></i>
-                <p>Trusted by 250k+ users</p>
-                <p class="details-text">
-                    We protect the payments of more than 250k users in the US, and have processed more than $2B using bank-level security & encryption.
-                </p>
-            </div>
-        </div>
-
-
-    </section>
-
-    <section class="more-details">
-
-        <div class="more-details-flex">
-            <div class="more-details-card">
-                <div class="purp-cont">
-                    <img src="/assets/detailImages/index3.png" alt="">
-                </div>
-                <h2>Block Unwanted <br> Subscriptions</h2>
-                <p>
-                    Ever jumped through hoops to cancel a subscription? With a Privacy Card, you don’t have to ask for permission: close the virtual card, stop the payments, and cancel the subscription.
-                </p>
-            </div>
-            <div class="more-details-card">
-                <div class="purp-cont">
-                    <img src="/assets/detailImages/index2.png" alt="">
-                </div>
-                <h2>Protect Your Payment Information</h2>
-                <p>
-                    Ever jumped through hoops to cancel a subscription? With a Privacy Card, you don’t have to ask for permission: close the virtual card, stop the payments, and cancel the subscription.
-                </p>
-            </div>
-            <div class="more-details-card">
-                <div class="purp-cont">
-                    <img src="/assets/detailImages/index1.png" alt="">
-                </div>
-                <h2>Take Control Of <br> Your Spending</h2>
-                <p>
-                    Ever jumped through hoops to cancel a subscription? With a Privacy Card, you don’t have to ask for permission: close the virtual card, stop the payments, and cancel the subscription.
-                </p>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="main-use-cases">
-        <div class="main-use-cases-header">
-            <h2>When to Use Virtual Cards?</h2>
-            <p>
-                For complete security, <span>you should use a virtual card every time you make a payment online.</span> A virtual card offers an added layer of protection for your transactions, and you’ll have peace of mind knowing your sensitive financial information is kept safe from hackers and scammers. Here are some situations when using a Privacy virtual card is especially helpful:
-            </p>
-        </div>
-
-
-        <div class="grid-use-cases">
-            <div class="use-cases">
-                <h3>When Starting Subscriptions & Trials</h3>
-                <p>
-                    Use Privacy for peace of mind when starting a new subscription or a free trial. Forget to cancel? No problem. We’ll automatically decline any unwanted charges.
-                </p>
-            </div>
-            <div class="use-cases">
-                <h3>When Purchasing From a New Merchants</h3>
-                <p>
-                    Shopping on a website that you’ve never used before or don’t fully trust? Create a single-use card that automatically closes after the transaction. If the merchant turns out to be fraudulent, our expert support team will manage the case on your behalf.
-                </p>
-            </div>
-            <div class="use-cases">
-                <h3>When Storing Your Card Info For Recurring Paymentss</h3>
-                <p>
-                    Privacy Cards lock to the first merchant they’re used at and can’t be used elsewhere if stolen. In the event of a data breach, you can pause or close a Privacy Card anytime, anywhere without impacting your other cards.
-                </p>
-            </div>
-            <div class="use-cases">
-                <h3>When Managing Your Budget</h3>
-                <p>
-                    Privacy lets you easily set and customize card limits, and we’ll automatically decline any transaction that exceeds the limit to keep your spending in check. You can also monitor spending activity in a convenient dashboard on your desktop and mobile phone.
-                </p>
-            </div>
-
-            <div class="use-case-image">
-                <img src="/assets/images/stackedCards.svg" alt="">
-            </div>
-
-        </div>
-    </section>
-
-    <section class="safety">
-        <div class="safety-header">
-            <h2>How Privacy Cards Keep You Safe</h2>
-            <p>To understand how Privacy virtual cards keep you safe, it helps to understand how traditional cards put you at risk.</p>
-        </div>
-
-        <div class="safety-flex">
-            <div class="safety-card">
-                <h3>Without Privacy Virtual Cards</h3>
-                <p>
-                    When you pay a merchant without using a Privacy Card, you provide your credit or debit card number, CVV, and expiration date. This sensitive data can be intercepted or stolen by third parties, leaving you vulnerable to data breaches and fraudulent card activity.
-                </p>
-                <div class="v-cards">
-                    <img src="/assets/images/mycard.png" alt="">
-                </div>
-            </div>
-            <div class="safety-card green">
-                <h3>Without Privacy Virtual Cards</h3>
-                <p>
-                    Privacy Cards act as a secure layer between your payment information and the merchant. When a Privacy Card is used for a transaction, the merchant only has access to the Privacy Card’s unique card number; your actual financial info is never revealed and is safeguarded from data breaches. The Privacy Card can only be used at that specific merchant and, for even more protection, can be set to automatically close after the first transaction.
-                </p>
-                <div class="v-cards">
-                    <img src="/assets/images/mycard2.png" alt="">
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-
-    <section class="customers">
-        <div class="customers-section-flex">
-            <h2>Why over 250,000 users choose Privacy</h2>
-            <div class="customer-card-flex">
-                <div class="customer-card">
-                    <div class="customers-stars">
-                        <img src="/assets/images/Trustpilot.svg" alt="">
-                    </div>
-                    <p>
-                        I have been using privacy.com for a few years. It makes online shopping safer and has saved me a few times from being overcharged. <span class="bold">I use Privacy for all of my online shopping now. I love being able to pause a card because it’s an extra level of protection against accidental charges on xbox or iPhone from the kids.</span>
-                    </p>
-                    <p>Josh</p>
-                </div>
-                <div class="customer-card">
-                    <div class="customers-stars">
-                        <img src="/assets/images/Trustpilot.svg" alt="">
-                    </div>
-                    <p>
-                        <span class="bold">Love the financial protection Privacy offers.</span> Case in point: In September of 2022 I made an online purchase with a legitimate U.S. vendor using a Privacy card. In April 2023 someone tried to use that same card for a purchase in Australia. Privacy declined the purchase. Save yourself the headaches of stolen credit card numbers.
-                    </p>
-                    <p>JMPA</p>
-                </div>
-                <div class="customer-card">
-                    <div class="customers-stars">
-                        <img src="/assets/images/Trustpilot.svg" alt="">
-                    </div>
-                    <p>
-                        Using Privacy virtual cards puts my mind at ease when shopping online because I can update dollar limits as my monthly budget changes and prevent overcharges. <span class="bold">Customer service has always been quite helpful and responsive when I have questions. </span>Definitely recommended for those wanting extra financial safeguards in their shopping experience.
+                    <h2>Try Privacy for Free</h2>
+    
             
-                    </p>
-                    <p>Anne</p>
+                <div class="mod-side">
+                    <div class="modal-left">
+                        <h3>See how <span>2 Million+ Companies and Devs</span>
+                            accelerate their payments with
+                            Privacy. </h3>
+                            <div class="modal-btns">
+                                <a class="goto" href="#">
+                                    <i class = "fab fa-google-play"></i>
+                                    <p>Download on Store</p>
+                                </a>
+                                <a class="goto" href="#">
+                                    <i class="fas fa-envelope"></i>
+                                    <p>Sign Up with Email</p>
+                                </a>
+                                <a class="goto" href="#">
+                                    <i class="fab fa-apple-pay"></i>
+                                    <p>Integrate with Pay</p>
+                                </a>
+                            </div>
+
+                            <p class="integrates">Privacy integrates with your favourite payment and processing terminals</p>
+                    </div>
+                    <div class="modal-right">
+                        <img class="modImage" src="/assets/images/modImage.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </dialog>
+
+
+        <special-header></special-header>
+
+        <div class="hero">
+                <div class="hero-left">
+                    <div class="hero-text">
+                        <h3>Trusted by 250k+ users</h3>
+                        <h1>Protect Your Payments and Keep Free Trials Free</h1>
+                        <h2>
+                            Shop privately and securely. Pay with virtual Privacy Cards that
+                            shield your card info.
+                        </h2>
+                    </div>
+                    <div class="hero-list">
+                        <div class="list">
+                            <i class="fas fa-arrow-right"></i>
+                            <p>Block overcharging and prevent fraud</p>
+                        </div>
+                        <div class="list">
+                            <i class="fas fa-arrow-right"></i>
+                            <p>Set limits to control your spending</p>
+                        </div>
+                        <div class="list">
+                            <i class="fas fa-arrow-right"></i>
+                            <p>Pause, unpause, and close cards any time</p>
+                        </div>
+                    </div>
+                    <div class="btn-hero">
+                        <button data-open-modal class="primary-btn rounded-btn">
+                            <a href="#"> Get Privacy now</a>
+                        </button>
+
+                        <a class="hero-link" href="#">
+                            <div class="img-flex">
+                                <img class="t-logo" src="/assets/images/tpilot-logo.svg" alt="" />
+                                <img class="stars" src="/assets/images/Trustpilot.svg" alt="" />
+                            </div>
+                            
+                            <div>
+                                <p>Trust Score 4.8</p>
+                                <p>2800+ reviews</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <img src="/assets/images/bgImage.png" alt="">
+
+
+                </div>
+        </div>
+
+        <section class="green-banner">
+            <div class="green-banner-flex">
+                <img class="ror-badge" src="/assets/logo/Asset 1.svg" alt="" >
+                <div class="key">
+                    <i class="fas fa-lock"></i>
+                    <p>Over $2 billion processed using best-in-class bank-level security & encryption</p>
+                </div>
+                <img class="ror-badge" src="/assets/logo/Asset 1.svg" alt="">
+
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <div class="testimonial-flex">
+                <img src="/assets/logo/techcrunch.svg" alt="">
+                <h3>“Privacy makes it harder for hackers to get your real credit card details.”</h3>
+                <div class="av-image-name">
+                    <div class="av-image">
+                        <img src="/assets/avatars/avatar2.jpg" alt="">
+                    </div>
+                    <div class="name-position">
+                        <p>Zack Whittaker</p>
+                        <p>Security Editor at TechCrunch</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-flex">
+                <img src="/assets/logo/paystack-2.svg" alt="">
+                <h3>
+                    “The Easy Way I Protect My Payments Online and Keep Free Trials Free.”
+                </h3>
+                <div class="av-image-name">
+                    <div class="av-image">
+                        <img src="/assets/avatars/avatar1.jpg" alt="">
+                    </div>
+                    <div class="name-position">
+                        <p>Kimber Streams</p>
+                        <p>Senior staff writer at Paystack</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-flex">
+                <img src="/assets/logo/forbes-logo-svg-vector.svg" alt="">
+                <h3>
+                    “Privacy.com gives customers peace of mind for online purchases.”
+                </h3>
+                <div class="av-image-name">
+                    <div class="av-image">
+                        <img src="/assets/avatars/avatar3.jpg" alt="">
+                    </div>
+                    <div class="name-position">
+                        <p>Blake Morgan</p>
+                        <p>Security Contributor at Forbes</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- THIS IS THE SIGN UP BUTTON -->
-           <a class="rounded-btn primary-btn" href="#">
-                <p>Sign Up</p>
-                <i class="fas fa-arrow-rightfas fa-arrow-right"></i>
-           </a>
-        </div>
-    </section>
-    
+
+        </section>
 
 
-    <!-- THIS IS THE ACCORDION SECTION -->
-    <special-accordion> </special-accordion>
+        <section class="rating">
+            <h2>“Top 100 Most Customer-Centric Companies”</h2>
+            <h3>Forbes</h3>
 
-   <signup-component></signup-component>
-    
+            <div class="details-flex">
+                <div class="details">
+                    <i class="fas fa-lock fa-2x"></i>
+                    <p>Best in Class Encryption</p>
+                    <p class="details-text">
+                        With miltary grade 256-bit encryption and rigorous PCI-DSS compliance, we protect your sensitive information like it’s our own.
+                    </p>
+                </div>
+                <div class="details">
+                    <i class="fas fa-award fa-2x"></i>
+                    <p>Award Winning Protection</p>
+                    <p class="details-text">
+                        We take consumer privacy seriously – Forbes recently named Privacy one of the world’s “Top 100 Most Customer-Centric Companies.”
+                    </p>
+                </div>
+                <div class="details">
+                    <i class="fas fa-heart fa-2x"></i>
+                    <p>Top Rated Customer Service</p>
+                    <p class="details-text">
+                        We’re highly responsive and care about your financial security. If you need any help or have questions about Privacy, get in touch.
+                    </p>
+                </div>
+                <div class="details">
+                    <i class="fas fa-user-check fa-2x"></i>
+                    <p>Trusted by 250k+ users</p>
+                    <p class="details-text">
+                        We protect the payments of more than 250k users in the US, and have processed more than $2B using bank-level security & encryption.
+                    </p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="more-details">
+
+            <div class="more-details-flex">
+                <div class="more-details-card">
+                    <div class="purp-cont">
+                        <img src="/assets/detailImages/index3.png" alt="">
+                    </div>
+                    <h2>Block Unwanted <br> Subscriptions</h2>
+                    <p>
+                        Ever jumped through hoops to cancel a subscription? With a Privacy Card, you don’t have to ask for permission: close the virtual card, stop the payments, and cancel the subscription.
+                    </p>
+                </div>
+                <div class="more-details-card">
+                    <div class="purp-cont">
+                        <img src="/assets/detailImages/index2.png" alt="">
+                    </div>
+                    <h2>Protect Your Payment Information</h2>
+                    <p>
+                        Ever jumped through hoops to cancel a subscription? With a Privacy Card, you don’t have to ask for permission: close the virtual card, stop the payments, and cancel the subscription.
+                    </p>
+                </div>
+                <div class="more-details-card">
+                    <div class="purp-cont">
+                        <img src="/assets/detailImages/index1.png" alt="">
+                    </div>
+                    <h2>Take Control Of <br> Your Spending</h2>
+                    <p>
+                        Ever jumped through hoops to cancel a subscription? With a Privacy Card, you don’t have to ask for permission: close the virtual card, stop the payments, and cancel the subscription.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="main-use-cases">
+            <div class="main-use-cases-header">
+                <h2>When to Use Virtual Cards?</h2>
+                <p>
+                    For complete security, <span>you should use a virtual card every time you make a payment online.</span> A virtual card offers an added layer of protection for your transactions, and you’ll have peace of mind knowing your sensitive financial information is kept safe from hackers and scammers. Here are some situations when using a Privacy virtual card is especially helpful:
+                </p>
+            </div>
+
+
+            <div class="grid-use-cases">
+                <div class="use-cases">
+                    <h3>When Starting Subscriptions & Trials</h3>
+                    <p>
+                        Use Privacy for peace of mind when starting a new subscription or a free trial. Forget to cancel? No problem. We’ll automatically decline any unwanted charges.
+                    </p>
+                </div>
+                <div class="use-cases">
+                    <h3>When Purchasing From a New Merchants</h3>
+                    <p>
+                        Shopping on a website that you’ve never used before or don’t fully trust? Create a single-use card that automatically closes after the transaction. If the merchant turns out to be fraudulent, our expert support team will manage the case on your behalf.
+                    </p>
+                </div>
+                <div class="use-cases">
+                    <h3>When Storing Your Card Info For Recurring Paymentss</h3>
+                    <p>
+                        Privacy Cards lock to the first merchant they’re used at and can’t be used elsewhere if stolen. In the event of a data breach, you can pause or close a Privacy Card anytime, anywhere without impacting your other cards.
+                    </p>
+                </div>
+                <div class="use-cases">
+                    <h3>When Managing Your Budget</h3>
+                    <p>
+                        Privacy lets you easily set and customize card limits, and we’ll automatically decline any transaction that exceeds the limit to keep your spending in check. You can also monitor spending activity in a convenient dashboard on your desktop and mobile phone.
+                    </p>
+                </div>
+
+                <div class="use-case-image">
+                    <img src="/assets/images/stackedCards.svg" alt="">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="safety">
+            <div class="safety-header">
+                <h2>How Privacy Cards Keep You Safe</h2>
+                <p>To understand how Privacy virtual cards keep you safe, it helps to understand how traditional cards put you at risk.</p>
+            </div>
+
+            <div class="safety-flex">
+                <div class="safety-card">
+                    <h3>Without Privacy Virtual Cards</h3>
+                    <p>
+                        When you pay a merchant without using a Privacy Card, you provide your credit or debit card number, CVV, and expiration date. This sensitive data can be intercepted or stolen by third parties, leaving you vulnerable to data breaches and fraudulent card activity.
+                    </p>
+                    <div class="v-cards rot-left">
+                        <img src="/assets/images/mycard.png" alt="">
+                    </div>
+                </div>
+                <div class="safety-card green">
+                    <h3>Without Privacy Virtual Cards</h3>
+                    <p>
+                        Privacy Cards act as a secure layer between your payment information and the merchant. When a Privacy Card is used for a transaction, the merchant only has access to the Privacy Card’s unique card number; your actual financial info is never revealed and is safeguarded from data breaches. The Privacy Card can only be used at that specific merchant and, for even more protection, can be set to automatically close after the first transaction.
+                    </p>
+                    <div class="v-cards rot-right">
+                        <img src="/assets/images/mycard2.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
 
 
+        <section class="customers">
+            <div class="customers-section-flex">
+                <h2>Why over 250,000 users choose Privacy</h2>
+                <div class="customer-card-flex">
+                    <div class="customer-card">
+                        <div class="customers-stars">
+                            <img src="/assets/images/Trustpilot.svg" alt="">
+                        </div>
+                        <p>
+                            I have been using privacy.com for a few years. It makes online shopping safer and has saved me a few times from being overcharged. <span class="bold">I use Privacy for all of my online shopping now. I love being able to pause a card because it’s an extra level of protection against accidental charges on xbox or iPhone from the kids.</span>
+                        </p>
+                        <p>Josh</p>
+                    </div>
+                    <div class="customer-card">
+                        <div class="customers-stars">
+                            <img src="/assets/images/Trustpilot.svg" alt="">
+                        </div>
+                        <p>
+                            <span class="bold">Love the financial protection Privacy offers.</span> Case in point: In September of 2022 I made an online purchase with a legitimate U.S. vendor using a Privacy card. In April 2023 someone tried to use that same card for a purchase in Australia. Privacy declined the purchase. Save yourself the headaches of stolen credit card numbers.
+                        </p>
+                        <p>JMPA</p>
+                    </div>
+                    <div class="customer-card">
+                        <div class="customers-stars">
+                            <img src="/assets/images/Trustpilot.svg" alt="">
+                        </div>
+                        <p>
+                            Using Privacy virtual cards puts my mind at ease when shopping online because I can update dollar limits as my monthly budget changes and prevent overcharges. <span class="bold">Customer service has always been quite helpful and responsive when I have questions. </span>Definitely recommended for those wanting extra financial safeguards in their shopping experience.
+                
+                        </p>
+                        <p>Anne</p>
+                    </div>
+                </div>
+
+                <!-- THIS IS THE SIGN UP BUTTON -->
+            <a class="rounded-btn primary-btn" href="/pages/login.html">
+                    <p>Sign Up</p>
+                    <i class="fas fa-arrow-rightfas fa-arrow-right"></i>
+            </a>
+            </div>
+        </section>
+        
 
 
+        <!-- THIS IS THE ACCORDION SECTION -->
+        <special-accordion> </special-accordion>
 
-   
+        <signup-component></signup-component>
 
-    <special-footer></special-footer>
+        <special-footer></special-footer>
+
+       
+
+
+     
+ 
     <script src="/js/app.js"></script>
     <script src="/js/headerFooter.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/components/details/details.js"></script>
+
+    
+
+   
+
+
+    <script>
+    //    ANIMATION FOR HERO
+        let hero = gsap.timeline({defaults:{ease:"power4.inOut", duration: 2}})
+        hero.from('.hero', {opacity: 0, x: 300, duration: 2});
+
+        // ANIMATION FOR LEFT IMAGE
+        let heroLeft = gsap.timeline({defaults:{ease:"power4.inOut", duration: 1}});
+        heroLeft.to('.hero-right', { 'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0, 0% 0%)', opacity: 1, duration: 2.1 } );
+
+        // ANIMATION FOR GREEN BANNER
+        let banner = gsap.timeline({defaults:{ease:"power4.inOut", duration: 1}});
+        banner.from('.green-banner', {y: 20, opacity: 0, duration: 2}    )
+        
+        
+        // ANIMATION FOR CUSTOMER REVIEW
+        let card = gsap.timeline({defaults:{ease: "power4.inOut", duration: 1}});
+        card.from('.testimonial-flex', {opacity: 0, x: -100, stagger: .2})
+
+
+        // .from('.logo, .link-group, .btn-group, .hamburger', { stagger: .5, opacity: 0, y: -100, duration: 2.4}, '-=3' )
+
+      
+    </script>
+
+<script>
+    window.onload = function () {
+      lax.init()
+  
+      // Add a driver that we use to control our animations
+      lax.addDriver('scrollY', function () {
+        return window.scrollY
+      })
+  
+      // Add animation bindings to elements
+      lax.addElements('.selector', {
+        scrollY: {
+          translateX: [
+            ["elInY", "elCenterY", "elOutY"],
+            [0, 'screenWidth/2', 'screenWidth'],
+          ]
+        }
+      })
+    }
+  </script>
+
+  <!-- GSAP SCROLL ANIM GOES HERE -->
+
+
+
+    <script>
+        let tl = gsap.timeline({
+            scrollTrigger : {
+                trigger: '.details',
+                start: '-90px, 90%',
+                end: '90px, 50%',
+                scrub: true,
+                // markers: true
+            }
+        })
+
+        tl.from ('.details', {
+            opacity: 0.3,
+            ease: "power1.inOut",
+            stagger: .9,
+            duration: 1.3,
+            x: 100
+        })
+
+        tl.from('.more-details-card', {
+            y: 200,
+            stagger: .9,
+            duration: 4
+
+
+        })
+
+        let rotate = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.rot-left',
+                start: 'top, center',
+                end: 'bottom, ', 
+                scrub: true,
+                // markers: true
+            }
+        })
+
+        rotate.from('.rot-left', {
+            rotate: 45,
+            scale: 1.1,
+            x: 200,
+            duration: 3,
+            ease: "power1.out"
+            
+        })
+
+        rotate.from('.rot-right', {
+            scale: 0.8,
+            duration:4.5,
+            ease: "power4.out"
+        })
+
+      
+        let image = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.use-case-image',
+                start: 'top, center',
+                end: 'bottom, ', 
+                scrub: true,
+                // markers: true
+            }
+        })
+
+        image.from ('.use-case-image', {
+            scale: 1.4,
+            y: 90,
+            opacity:0
+
+        })
+
+
+       
+
+
+
+
+        
+    </script>
+
+
+
+
+
+
+
+
+  <!-- LENIS GOES HERE -->
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.28/bundled/lenis.min.js"></script> 
+
+    <script>
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+        console.log(e)
+        })
+
+        function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+    </script>
+
+
+
+
+
   </body>
 </html>

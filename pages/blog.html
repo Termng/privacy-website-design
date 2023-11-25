@@ -8,6 +8,9 @@
     <!-- FONT AWESOME ICONS -->
     <script src="https://kit.fontawesome.com/fc0bcf5886.js" crossorigin="anonymous"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
     <title>Blog: Read our Newsletter Jennifer</title>
 
 </head>
@@ -329,7 +332,20 @@
     <special-footer></special-footer>
     <script src="/js/app.js"></script>
     <script src="/js/headerFooter.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="node_modules/filterizr/dist/jquery.filterizr.min.js"></script>
+  
+    <script>
+
+        let move = gsap.timeline({defaults:{ease:"power4.inOut", duration: 2}})
+        move.from('.blog-card', {
+            x: 100,
+            opacity: 0,
+            stagger: .5
+        })
+
+
+
+
+    </script>
+
 </body>
 </html>

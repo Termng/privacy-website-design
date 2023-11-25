@@ -138,6 +138,11 @@
   background-color: white;
 }
 
+.neutral-btn a{
+  text-decoration: none;
+  color: black;
+}
+
 .neutral-btn:hover{
   background-color: white;
 }

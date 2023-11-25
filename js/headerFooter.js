@@ -7,7 +7,6 @@ class SpecialHeader extends HTMLElement {
                 <ul class = 'link-group'>
                     <li><a href="/pages/pricing.html">Pricing & Plans</a></li>
                     <li><a href="/pages/virtualCards.html">What are Virtual Cards ?</a></li>
-                    <li><a href="">Support</a></li>
                     <li><a href="/pages/aboutUs.html">About Us</a></li>
                     <li><a href="/pages/blog.html">Blog</a></li>
                 </ul>
@@ -15,8 +14,9 @@ class SpecialHeader extends HTMLElement {
                
                 <div>
                 <div class = "btn-group">
-                    <button class="neutral-btn">Log in</button>
-                    <button class="primary-btn">Sign Up &rarr; </button>
+                <button class="neutral-btn"><a href="/pages/login.html">Log in</a></button>
+                
+                <button class="primary-btn">Sign Up &rarr; </button>
                 </div>
 
                 <div>
@@ -171,7 +171,7 @@ class SpecialAccordion extends HTMLElement {
                         Our basic plan is free to use* on domestic transactions because, like other card companies, we collect transaction fees from merchants.
                     </p>
                     
-                    <a class="rounded-btn primary-btn sign-up-component" href="#">
+                    <a class="rounded-btn primary-btn sign-up-component" href="/pages/login.html">
                         <p>Sign Up</p>
                         <i class="fas fa-arrow-rightfas fa-arrow-right"></i>
                         </a>

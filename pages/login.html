@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/resets.css" />
+    <link rel="stylesheet" href="/css/login.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+
+    <!-- FONT AWESOME ICONS -->
+    <script
+      src="https://kit.fontawesome.com/fc0bcf5886.js"
+      crossorigin="anonymous"
+    ></script>
+
+
+
+    <title>Login to Privacy</title>
+</head>
+<body>
+    
+    <main>
+        <button class="center-me"> <a href="/index.html">PRIVACY</a></button>
+        <div class="main-box">
+            <section class="image">
+                <div class="img-container">
+                    <h2>Save time on checkout</h2>
+                    <p>Create and auto fill Privacy cards with our Browser extension</p>
+                    <button>Add to Firefox <i class="fab fa-firefox-browser"></i></button>
+                    <img src="/assets/images/gradient.png" alt="">
+                </div>
+            </section>
+            <section class="form">
+                <div class="f-header">
+                    <h2>Log  In</h2>
+                    <p>Reset Password</p>
+                </div>
+                <form class="form-main" action="">
+                    <!-- EMAIL -->
+                    <div class="fields">
+                        <label for="">Email</label> <br>
+                        <input class="full-width" type="text" placeholder="email@example.com" required>
+                    </div>
+                    <!-- PASSWORD -->
+                    <div class="fields">
+                        <label for="">Password</label> <br>
+                        <input class="full-width"  type="password" placeholder="password" required>
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <label for="">Remember email</label>
+                    </div>
+                    <br>
+
+                    <button class="log">Log in</button>
+                    <p class="last-text">New to privacy <a href="">Sign up here</a></p>
+                </form>
+            </section>
+        
+        </div>
+    </main>
+    
+    
+
+    <script src="/js/app.js"></script>
+    <script src="/js/headerFooter.js"></script>
+
+    <script>
+        let form = gsap.timeline({defaults:{ease:"power4.inOut", duration: 1.2}})
+
+        form.from('.main-box', {
+            x: 90,
+            opacity: 0,
+            stagger: .4
+        })
+        form.from('.form', {
+            y: 80,
+            opacity: 0,
+            stagger: .4
+        })
+
+    </script>
+
+</body>
+</html>

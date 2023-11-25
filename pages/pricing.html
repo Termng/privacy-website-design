@@ -10,6 +10,7 @@
       src="https://kit.fontawesome.com/fc0bcf5886.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
     <title>Privacy Pricings</title>
   </head>
@@ -223,5 +224,13 @@
     <special-footer></special-footer>
     <script src="/js/app.js"></script>
     <script src="/js/headerFooter.js"></script>
+
+
+    <script>
+      let cards = gsap.timeline({defaults:{ease:"power4.inOut", duration: 2}})
+      cards.from('.plans', {opacity: 0, y: 20, duration: 2, stagger: .4})
+
+
+    </script>
   </body>
 </html>

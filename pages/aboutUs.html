@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/aboutUs.css">
     <!-- FONT AWESOME ICONS -->
     <script src="https://kit.fontawesome.com/fc0bcf5886.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <title>About Privacy</title>
 </head>
 <body>
@@ -14,13 +15,11 @@
 
 
     <div class="main-box">
-        <section>
+        <section class="anim">
             <div class="first-section">
                 <h1>Our mission is to make payments safer, easier, and more protected for everyone.</h1>
             </div>
-        </section>
-        
-        <section>
+
             <div class="second-section">
                 <h2>Our story</h2>
                 <div class="second-sectionP1">
@@ -95,6 +94,13 @@
     <script src="/js/app.js"></script>
     <script src="/js/headerFooter.js"></script>
     <script src="https://kit.fontawesome.com/862ee362e7.js" crossorigin="anonymous"></script>
+
+    <script>
+        let anim = gsap.timeline({default: {ease: 'power4.inOut, duration: 3'}})
+
+        anim.from('.anim', {opacity: 0, y: 40, stagger: .7})
+        anim.from('.second-section', {opacity: 0, y: 40, stagger: .7})
+    </script>
 
 </body>
 </html>
