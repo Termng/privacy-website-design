@@ -154,8 +154,50 @@ h6{
   .links li a{
     font-size: 1rem;
     color: var(--color-purple);
+    line-height: .5rem;
   }
 
+
+  .griddy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 1200px) {
+    h1{
+        font-size: 2rem;
+    }
+
+    .grid-item{
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: column;
+       border: 0px solid black;
+       padding: rem;
+       height: 7rem;
+    }
+    .grid-item p{
+        padding-left: 2rem;
+    }
+
+    .grid-item i{
+        font-size: 1.7rem;
+    }
+    
+  }
+
+
+  .authors img{
+    max-width: 70px;
+    max-height: 70px;
+    transition: all ease-in-out .3s;
+  }
+
+  .authors img:hover{
+    transform: scale(1.3);
+  }
 
 
 
