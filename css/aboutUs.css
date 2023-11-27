@@ -7,12 +7,204 @@
     --color-cream: #fcf6f0;
     --color-purple-faint: #E4E4FD;
     --color-red: #F24949;
+  
+  
+    --box-shadow-default: 0 4px 8px 0 rgba(0,0,0,0.05);
+    --box-shadow-small: 0 2px 4px 0 rgba(0,0,0,0.05);
+    --box-shadow-large: 0 8px 16px 0 rgba(0,0,0,0.05);
+    --box-shadow-hairline: 0 0 0 1px rgba(0,0,0,0.10);
 }
 
 
 /* THIS IS THE BEGINNING OF THE CSS FOR ABOUT US PAGE  */
 
+#preloader{
+  background: white url(/assets/images/Pulse-1s-277px.gif) no-repeat center;
+  background-size: 5%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
 
+
+.main-box{
+  background-color: white;
+  max-width: 800px;
+  width: 90%;
+  border: none;
+  margin: auto;
+  padding: 20px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.first-section{
+    text-align: left;
+    font-size: 29px;
+    line-height: 2.9rem;
+    padding-bottom: 50px;
+}
+
+.second-section{
+    text-align: left;
+}
+
+h2{
+    padding-bottom: 15px;
+    font-size: 27px;
+}
+
+.second-sectionP1{
+    padding-bottom: 19px;
+    font-size: 18px;
+    line-height: 1.8rem;
+}
+
+h3{
+    padding-bottom: 15px;
+    font-size: 27px;
+}
+
+.authors{
+    display: inline-flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h4{
+    padding-bottom: 15px;
+    font-size: 24px;
+}
+
+.grid-container {
+    width: 90%;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    border: 1px solid #ddd;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+  }
+
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 12.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: .1px solid rgba(129, 129, 129, 0.5);
+    padding: 2rem;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    text-align: center;
+  }
+
+  .grid-item p{
+    padding-block: 1rem;
+    font-size: 1rem;
+    color: rgb(150, 148, 148);
+  }
+
+  h5{
+    padding-bottom: 2px;
+    font-size: 22px;
+}
+
+.second-sectionP2{
+    padding-bottom: none;
+    font-size: 20px;
+    line-height: 2.7rem;
+    padding-top: none;
+}
+
+.third-section{
+    background-color: lightgreen;
+}
+
+h6{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: none;
+    height: 0.2rem;
+}
+
+.third-sectionP1{
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 35px;
+}
+
+.button-section{
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 20px;
+}
+
+
+.button{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-purple);
+    color: rgb(255, 255, 255);
+    background-color: var(--color-purple);
+  }
+
+
+  .links li a{
+    font-size: 1rem;
+    color: var(--color-purple);
+    line-height: .5rem;
+  }
+
+
+  .griddy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 1200px) {
+    h1{
+        font-size: 2rem;
+    }
+
+    .grid-item{
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: column;
+       border: 0px solid black;
+       padding: rem;
+       height: 7rem;
+    }
+    .grid-item p{
+        padding-left: 2rem;
+    }
+
+    .grid-item i{
+        font-size: 1.7rem;
+    }
+    
+  }
+
+
+  .authors img{
+    max-width: 70px;
+    max-height: 70px;
+    transition: all ease-in-out .3s;
+  }
+
+  .authors img:hover{
+    transform: scale(1.3);
+  }
 
 
 
@@ -39,3 +231,21 @@
 
 
 /* WRITE MEDIA QUERIES BELOW  */
+
+@media screen and (max-width: 768px) {
+    .grid-container{
+        grid-template-columns: 1fr 1fr; 
+    }
+    
+  }
+
+  @media screen and (max-width: 504px) {
+    .grid-container{
+        grid-template-columns: 1fr; 
+    }
+    
+  }
+
+
+
+

@@ -19,123 +19,204 @@
 
   
 /* THIS IS THE BEGINNING OF THE CSS FOR PRICING PAGE  */
-.container {
+
+#preloader{
+    background: white url(/assets/images/Pulse-1s-277px.gif) no-repeat center;
+    background-size: 5%;
     height: 100vh;
-    
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+  
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .header {
     text-align: center;
-    padding-top: 60px;
-    font-size: 24px;
+    font-size: 1.7rem;
+    margin-top: 3rem;
 }
 
-.plans {
-    padding-top: 90px;
+/* THIS IS THE FLEBOX FOR THE THREE CARDS */
+.card-flex{
     display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
-    height: 84vh;
-    padding-left: 30px;
-    padding-right: 30px;
-    
-}
-
-.plansheadone {
-    font-size: 12px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-left: 0;
-    padding-right: 0;
-    background-color: #4949f2;
-    color: #fcf6f0;
-    border-radius: 4px;
-    width: 150px;
-    text-align: center;
-    margin-top: -45px;
-    margin-left: 83px;
-    margin-right: 83px;
+    gap: 3rem;
     align-items: center;
-
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-inline: 2rem;
+    /* background-color: green; */
 }
 
+/* THIS IS THE INDIVIDUAL FLEX-BOXES */
+.plans {
+    display: flex;
+    align-items: center;
+    flex-direction: column;  
+    /* background-color: purple */
+}
 
-.plansheadtwo {
-    font-size: 12px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    background-color: #4949f2;
-    color: #fcf6f0;
+/* THIS IS THE CENTERED COMPONENT IN THE CARDS . USED POSITION ABSOLUTE */
+.move h2{
+    background-color: var(--color-purple);
+    color: white;
+    font-size: .8rem;
+    font-weight: 400;
     border-radius: 4px;
-    width: 187px;
+    position: absolute;
     text-align: center;
-    margin-top: -45px;
-    margin-left: 69px;
-    margin-right: 69px;
+    padding-inline:1rem ;
+    padding-block: .4rem;
+    transform: translateX(-15px);
+    transform: translateY(-15px);
 }
 
-.plansheadthree {
-    font-size: 12px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    background-color: #4949f2;
-    color: #fcf6f0;
-    border-radius: 4px;
-    width: 210px;
-    text-align: center;
-    margin-top: -45px;
-    margin-left: 58px;
-    margin-right: 58px;
+.first{
+    margin-left: -80px;
+}
+.second{
+    margin-left: -100px;
+}
+.third{
+    margin-left: -110px;
 }
 
-.pricingplans {
+
+
+
+
+/* THIS IS FOR DEBUGGING (DONT TOUCH) MAIN FLEX CONTAINER PER CARD */
+.tier {
+    display: flex;
+    /* background-color: orange; */
+    border: none;
+}
+/* THIS CONTROLS SIZE OF THE CARD AND SPACE BETWEEN BUTTONS */
+
+.tier-container-btn{
+    display: flex;
+    max-width: 400px;
+    flex-direction: column;
+    /* gap: 8rem; */
+    padding-inline: 2.3rem;
+    padding-block: 2rem;
     border: 1px solid black;
-    width: 30%;
-    border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    border-radius: 5px;
 }
 
-.personal {
-    margin-top: 32px;
-}
-
-.money {
+.list-box{
     display: flex;
-    gap: 5px;
+    align-items: first baseline;
+    gap: 2rem;
+    margin: 0;
+    flex-direction: column;
 }
 
-.text {
-    font-size: 14px;
-    font-weight: 600;
-}
-
-li {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-}
-
-ul {
-    padding-left: 0;
+/* THESE ARE STYLES FOR PRICING COMPONENTS */
+.unstyled{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1.3rem;
+    margin: 0;
+    padding: 0;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+}
+
+
+.text {
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.list-header h2{
+    font-size: .9rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+
+.highlight h2{
+    color: var(--color-purple);
 }
 
 
 
-.bottom {
+.list-header h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.list-header h3 span{
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+/* THIS IS THE BUTTON COMPONENT */
+.cta-btn{
+    display: inline-block;
     text-align: center;
-    cursor: pointer;
+    width: 100%;
+    margin-top: 5rem;
+    background-color: var(--color-text) ;
+    color: white;
     text-decoration: none;
-    background-color: #333333;
-    color: #fcf6f0;
-    font-size: 12px;
+    padding-block: 1rem;
+    border-radius: 5px;
+   
+}
+.highlight-btn{
+    background-color: var(--color-purple);
 }
 
+
+.bottom-text{
+    text-align: center;
+    font-weight: 500;
+    margin-block: 3rem;
+    font-size: 1rem;
+}
+
+.mt-6{
+    margin-top: 9rem;
+}
+
+
+
+
+ul p{
+color: grey;
+font-weight: 300;
+font-size: .75rem;
+}
+
+.white{
+    border: 1px solid black;
+}
+
+.green{
+    background-color: var(--color-lime);
+    min-height: 800px;
+    border: 1px solid black
+}
+
+
+
+@media (max-width: 300px) {
+    .move h2{
+        font-size: 12px;
+    }
+    
+}
 
 
 

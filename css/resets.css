@@ -138,6 +138,11 @@
   background-color: white;
 }
 
+.neutral-btn a{
+  text-decoration: none;
+  color: black;
+}
+
 .neutral-btn:hover{
   background-color: white;
 }
@@ -154,14 +159,17 @@
   align-items: center;
   justify-content: space-around;
   gap: 7rem;
+  overflow: hidden;
   border-bottom: 1px solid var(--color-text);
 }
 
 .hamburger{
   display: none;
   width: 30px;
+
   cursor: pointer;
 }
+
 
 
 
@@ -174,7 +182,7 @@
 footer{
   background-color: black;
   padding-block: 4rem;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 
 
 }
@@ -253,6 +261,54 @@ footer{
   flex-wrap: wrap;
 }
 
+/* THIS IS THE SIGNUP COMPONENT */
+
+.sign-up{
+  background-color: var(--color-lime);
+  padding-block: 3rem;
+  margin-top: 4rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.sign-up div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.sign-up h2{
+  font-size: 3.2rem;
+  text-align: center;
+}
+.sign-up p{
+  font-size: 1.1rem;
+  font-weight: 300;
+  max-width: 700px;
+  width: 80%;
+}
+
+
+
+
+.sign-up-component{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  background-color: none;
+  border: none;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
 
 @media (max-width: 1280px) {
 
@@ -260,9 +316,11 @@ footer{
     display: none;
   }
   .hamburger{
+    width: 30px;
     display: block;
   }
   .link-group{
+    z-index: 99;
     opacity: 0;
     display:inline-block;
     position: absolute;
@@ -272,15 +330,16 @@ footer{
     right: 0;
     width: 100vw;
     color: rgb(255, 255, 255);
-    background-color:#333333ed;
+    background-color:#191818ed;
     transition: 0.2s;
     text-align: right;
   }
   .link-group li a{
     color: rgb(255, 255, 255);
-    font-size: .8rem;
+    font-size: 1rem;
     width: fit-content;
     margin: 30px auto 0 auto;
+    font-weight: 400;
   }
 
   .link-group li{
@@ -288,7 +347,7 @@ footer{
     transition: 0.2s;
     width: fit-content;
     padding-block: 0.2rem;
-    margin: 10px 10px 0 auto;
+    margin: 20px 10px 0 auto;
     text-align: right;
     padding-inline: 2rem;
     /* list-style: georgian; */
@@ -312,6 +371,11 @@ footer{
   } */
   .navi{
     padding-block: 1rem;
+  }
+  .sign-up h2{
+    font-size: 2.3rem;
+    width: 80%;
+    text-align: center;
   }
 
 }
